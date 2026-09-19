@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }).catch(err => {
                 console.log("Audio autoplay prevented by browser:", err);
             });
-        }, 2000); // Wait 2 seconds for animation
+        }, 5000); // Wait 5 seconds for user to read text
     });
 
     // Toggle Music
