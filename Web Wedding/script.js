@@ -91,11 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 particlesJS('particles-main', {
                     "particles": {
                         "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
-                        "color": { "value": "#d4af37" }, // Gold color
+                        "color": { "value": "#7bbaff" }, // Blue color
                         "shape": { "type": "circle" },
                         "opacity": { "value": 0.6, "random": true },
                         "size": { "value": 4, "random": true },
-                        "line_linked": { "enable": true, "distance": 150, "color": "#d4af37", "opacity": 0.2, "width": 1 },
+                        "line_linked": { "enable": true, "distance": 150, "color": "#7bbaff", "opacity": 0.2, "width": 1 },
                         "move": {
                             "enable": true,
                             "speed": 2,
