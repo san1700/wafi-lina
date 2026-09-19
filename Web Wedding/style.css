@@ -1378,3 +1378,22 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
   pointer-events: none;
 }
 
+
+
+/* ================= HAND DECORATION ================= */
+.hand-prop {
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  z-index: 6; /* Above front flap and wax seal */
+  pointer-events: none;
+  animation: handSway 5s ease-in-out infinite alternate;
+  filter: drop-shadow(0 -5px 15px rgba(0,0,0,0.5));
+}
+
+@keyframes handSway {
+  0% { transform: translateX(-50%) rotate(-2deg); }
+  100% { transform: translateX(-48%) rotate(2deg); }
+}
