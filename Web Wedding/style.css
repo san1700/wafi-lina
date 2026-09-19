@@ -1359,3 +1359,22 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
 .corner-tr { top: -10px; right: -10px; transform: scaleX(-1); }
 .corner-bl { bottom: -10px; left: -10px; transform: scaleY(-1); }
 .corner-br { bottom: -10px; right: -10px; transform: scale(-1, -1); }
+
+/* ================= PHOTO RIBBON ================= */
+.photo-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.photo-ribbon {
+  position: absolute;
+  bottom: -40px; /* Adjust this value so it overlaps the bottom edge perfectly */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%; /* Slightly wider than the photo */
+  max-width: 400px;
+  z-index: 10;
+  pointer-events: none;
+}
+
