@@ -15,11 +15,18 @@ window.addEventListener('load', () => {
     if (typeof particlesJS !== 'undefined') {
         particlesJS('particles-js', {
             "particles": {
-                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "number": { "value": 12, "density": { "enable": true, "value_area": 800 } },
                 "color": { "value": "#ffffff" },
-                "shape": { "type": "circle" },
-                "opacity": { "value": 0.5, "random": true },
-                "size": { "value": 3, "random": true },
+                "shape": { 
+                    "type": "image",
+                    "image": {
+                        "src": "img/wayang-blue.png",
+                        "width": 100,
+                        "height": 138
+                    }
+                },
+                "opacity": { "value": 0.6, "random": true },
+                "size": { "value": 40, "random": true },
                 "line_linked": { "enable": false },
                 "move": {
                     "enable": true,
@@ -90,12 +97,19 @@ document.addEventListener('DOMContentLoaded', () => {
             if (typeof particlesJS !== 'undefined') {
                 particlesJS('particles-main', {
                     "particles": {
-                        "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+                        "number": { "value": 15, "density": { "enable": true, "value_area": 800 } },
                         "color": { "value": "#7bbaff" }, // Blue color
-                        "shape": { "type": "circle" },
-                        "opacity": { "value": 0.6, "random": true },
-                        "size": { "value": 4, "random": true },
-                        "line_linked": { "enable": true, "distance": 150, "color": "#7bbaff", "opacity": 0.2, "width": 1 },
+                        "shape": { 
+                            "type": "image",
+                            "image": {
+                                "src": "img/wayang-blue.png",
+                                "width": 100,
+                                "height": 138
+                            }
+                        },
+                        "opacity": { "value": 0.4, "random": true },
+                        "size": { "value": 45, "random": true },
+                        "line_linked": { "enable": false },
                         "move": {
                             "enable": true,
                             "speed": 2,

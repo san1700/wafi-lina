@@ -1342,3 +1342,20 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
   font-style: italic;
   line-height: 1.4;
 }
+/* ================= CORNER DECORATIONS ================= */
+.corner-decor {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  background-image: url('img/lace.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 2000;
+  opacity: 0.9;
+}
+
+.corner-tl { top: -10px; left: -10px; }
+.corner-tr { top: -10px; right: -10px; transform: scaleX(-1); }
+.corner-bl { bottom: -10px; left: -10px; transform: scaleY(-1); }
+.corner-br { bottom: -10px; right: -10px; transform: scale(-1, -1); }
