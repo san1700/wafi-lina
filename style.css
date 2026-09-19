@@ -1378,3 +1378,37 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
   pointer-events: none;
 }
 
+
+/* ================= FEATHER & HAND DECORATIONS ================= */
+.feather-prop {
+  position: absolute;
+  right: -20px;
+  top: 40px;
+  width: 120px;
+  z-index: 10;
+  animation: floatFeather 4s ease-in-out infinite alternate;
+  pointer-events: none;
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+}
+
+@keyframes floatFeather {
+  0% { transform: translateY(0) rotate(15deg); }
+  100% { transform: translateY(-10px) rotate(5deg); }
+}
+
+.hand-prop {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  z-index: 6; /* Above front flap and wax seal */
+  pointer-events: none;
+  animation: handSway 5s ease-in-out infinite alternate;
+  filter: drop-shadow(0 -5px 15px rgba(0,0,0,0.5));
+}
+
+@keyframes handSway {
+  0% { transform: translateX(-50%) rotate(-2deg); }
+  100% { transform: translateX(-48%) rotate(2deg); }
+}
