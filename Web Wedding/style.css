@@ -1383,7 +1383,7 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
 /* ================= HAND DECORATION ================= */
 .hand-prop {
   position: absolute;
-  bottom: -120px;
+  bottom: -320px;
   left: 50%;
   transform: translateX(-50%);
   width: 300px;
