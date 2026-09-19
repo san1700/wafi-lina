@@ -885,7 +885,7 @@ BOTTOM NAVIGATION
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  left: 50%;
+  left: 60%;
   transform: translateX(-50%);
   width: 100%;
   max-width: 480px;
@@ -1370,7 +1370,7 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
 .photo-ribbon {
   position: absolute;
   bottom: -40px; /* Adjust this value so it overlaps the bottom edge perfectly */
-  left: 50%;
+  left: 60%;
   transform: translateX(-50%);
   width: 120%; /* Slightly wider than the photo */
   max-width: 400px;
@@ -1383,8 +1383,8 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
 /* ================= HAND DECORATION ================= */
 .hand-prop {
   position: absolute;
-  bottom: -320px;
-  left: 50%;
+  bottom: -220px;
+  left: 60%;
   transform: translateX(-50%);
   width: 300px;
   z-index: 6; /* Above front flap and wax seal */
@@ -1396,4 +1396,10 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
 @keyframes handSway {
   0% { transform: translateX(-50%) rotate(-2deg); }
   100% { transform: translateX(-48%) rotate(2deg); }
+}
+
+
+.cover-page.open .hand-prop {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
