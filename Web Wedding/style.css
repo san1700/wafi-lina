@@ -677,7 +677,10 @@ ENVELOPE ANIMATION
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1b2a49;
+  background-image: url('img/envelope.png');
+  background-size: cover;
+  background-position: center;
+  filter: hue-rotate(220deg) brightness(0.5);
   border-radius: 5px;
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
 }
@@ -691,44 +694,33 @@ ENVELOPE ANIMATION
   z-index: 3;
 }
 
-.env-flap-left {
+.env-flap-left, .env-flap-right, .env-flap-bottom, .env-flap-top {
   position: absolute;
   top: 0;
   left: 0;
-  border-top: 110px solid transparent;
-  border-bottom: 110px solid transparent;
-  border-left: 160px solid #253b66;
-  border-right: 160px solid transparent;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/envelope.png');
+  background-size: cover;
+  background-position: center;
+  filter: hue-rotate(220deg);
+  border: none;
+}
+
+.env-flap-left {
+  clip-path: polygon(0 0, 50% 50%, 0 100%);
 }
 
 .env-flap-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-top: 110px solid transparent;
-  border-bottom: 110px solid transparent;
-  border-left: 160px solid transparent;
-  border-right: 160px solid #253b66;
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%);
 }
 
 .env-flap-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-top: 110px solid transparent;
-  border-left: 160px solid transparent;
-  border-right: 160px solid transparent;
-  border-bottom: 110px solid #20345b;
+  clip-path: polygon(0 100%, 50% 50%, 100% 100%);
 }
 
 .env-flap-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-top: 130px solid #2a4475;
-  border-left: 160px solid transparent;
-  border-right: 160px solid transparent;
-  border-bottom: 90px solid transparent;
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
   z-index: 4;
   transform-origin: top;
   transition: transform 0.8s ease-in-out, z-index 0.2s;
@@ -804,7 +796,7 @@ ENVELOPE ANIMATION
   background-color: #8b0000;
   border-radius: 50%;
   z-index: 5;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(0, 0, 0, 0.5);
