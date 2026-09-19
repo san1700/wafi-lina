@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wedding Invitation | KHAIRUL WAFI & LINA AGUSTINA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/navicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+<body class="noscroll">
+
+  <!-- ================= PRE-LOADER ================= -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="rings">
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+      <h2 class="loader-text">W & L</h2>
+    </div>
+  </div>
+
+  <!-- ================= COVER PAGE ================= -->
+  <div id="cover-page" class="cover-page">
+    <div id="particles-js"></div>
+    <div class="envelope-wrapper">
+      <div class="envelope" id="envelope">
+        <!-- Back side of envelope (inside) -->
+        <div class="env-back"></div>
+
+        <!-- The Letter that pulls out -->
+        <div class="env-letter" id="env-letter">
+          <div class="cover-content">
+            <p class="cover-subtitle">THE WEDDING OF</p>
+            <h1 class="cover-title">WAFI<br>&<br>LINA</h1>
+            <div class="guest-info">
+              <p>Kepada Yth. Bapak/Ibu/Saudara/i,</p>
+              <h3 class="guest-name" id="guest-name-display">Tamu Undangan</h3>
+              <p>Di Tempat</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Front side of the envelope -->
+        <div class="env-front">
+          <div class="env-flap-left"></div>
+          <div class="env-flap-right"></div>
+          <div class="env-flap-bottom"></div>
+        </div>
+
+        <!-- Top flap of the envelope -->
+        <div class="env-flap-top" id="env-flap-top"></div>
+
+        <!-- Wax Seal (Open Button) -->
+        <div class="wax-seal" id="btn-open-invitation">
+          <span class="seal-text">BUKA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= AUDIO & MUSIC ================= -->
+  <audio id="bg-music" loop>
+    <!-- Ganti file mp3 ini dengan lagu yang Anda download -->
+    <source src="give-me-your-forever.mp3" type="audio/mpeg">
+  </audio>
+  <button id="music-control" class="music-btn rotating">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+    </svg>
+  </button>
+
+  <div class="invitation-container" id="home-section">
+    <!-- Main content particles -->
+    <div id="particles-main"></div>
+
+    <!-- Top Ticket Section -->
+    <section class="ticket-section top-ticket">
+      <div class="ticket-content">
+        <p class="ticket-subtitle">WEDDING TICKET</p>
+
+        <div class="icon-divider">
+          <svg class="plane-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21.5 4s-2 .5-3.5 2L14.5 9.5l-8.2-1.8c-.8-.2-1.5.3-1.6 1.1-.1.7.3 1.4 1 1.6l5.5 2.5-4 4-2.8-.7c-.6-.2-1.2.2-1.4.8-.1.5.2 1 .6 1.2l3.8 1.8 1.8 3.8c.2.4.7.7 1.2.6.6-.2 1-1 .8-1.4l-.7-2.8 4-4 2.5 5.5c.2.7.9 1.1 1.6 1 .8-.1 1.3-.8 1.1-1.6z" />
+          </svg>
+        </div>
+
+        <div class="globe-placeholder">
+          <svg viewBox="0 0 100 100" fill="none" stroke="#2c3e50" stroke-width="1.5">
+            <circle cx="50" cy="50" r="45" />
+            <ellipse cx="50" cy="50" rx="20" ry="45" />
+            <path d="M5 50h90M15 25h70M15 75h70M50 5v90" />
+          </svg>
+        </div>
+
+        <h1 class="couple-names">
+          KHAIRUL WAFI<br>
+          <span class="and-script">and</span><br>
+          LINA AGUSTINA
+        </h1>
+
+        <div class="flight-details">
+          <div class="detail-box">
+            <span class="label">FLIGHT & DATE</span>
+            <span class="value">06.10.2026</span>
+          </div>
+          <div class="detail-box">
+            <span class="label">WEDDING LOCATION</span>
+            <span class="value">CO'GUNUNG BARAT</span>
+          </div>
+        </div>
+
+        <div class="stamps-section">
+          <div class="stamp-circle">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" fill="none" stroke="#2c3e50" stroke-width="2" stroke-dasharray="4 2" />
+              <text x="50%" y="30%" text-anchor="middle" font-size="12" font-family="Montserrat" font-weight="600"
+                fill="#2c3e50">KHAIRUL WAFI & LINA AGUSTINA</text>
+              <text x="50%" y="80%" text-anchor="middle" font-size="12" font-family="Montserrat" font-weight="600"
+                fill="#2c3e50">06 OCT 2026</text>
+              <path d="M35 55l10-10 20 20M55 45l15-15" stroke="#2c3e50" stroke-width="2" fill="none" />
+            </svg>
+          </div>
+          <div class="barcode-waves">
+            <svg viewBox="0 0 100 40" stroke="#2c3e50" stroke-width="1.5" fill="none">
+              <path d="M0 20 Q 10 5, 20 20 T 40 20 T 60 20 T 80 20 T 100 20" />
+              <path d="M0 30 Q 10 15, 20 30 T 40 30 T 60 30 T 80 30 T 100 30" />
+            </svg>
+          </div>
+          <div class="signature">
+            Are<br>One
+          </div>
+        </div>
+
+        <p class="boarding-text">BOARDING FOR LOVE</p>
+      </div>
+      <div class="ticket-rip"></div>
+    </section>
+
+    <!-- Welcome & Photo Section -->
+    <section class="welcome-section" id="couple-section">
+      <h2 class="section-title">DEAR FRIENDS<br>AND FAMILY</h2>
+      <p class="welcome-text">
+        Maha Suci Allah SWT, yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah perkenankan lah pernikahan
+        kami:
+      </p>
+
+      <!-- Dynamic Countdown Timer -->
+      <div id="countdown-timer" class="countdown-timer"></div>
+
+      <div class="image-wrapper full-width-image">
+        <!-- Placeholder for couple at airplane -->
+        <img src="img/ARDIEART (2).jpg" alt="Couple at airplane">
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="timeline-section">
+      <h2 class="section-title">TIMELINE</h2>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="event-name">Wedding ceremony</span>
+            <span class="event-time">08.00 WIB - Selesai</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="event-name">Reception</span>
+            <span class="event-time">12.00 WIB - Selesai</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY SECTION ================= -->
+    <section class="gallery-section" id="gallery-section">
+      <h2 class="section-title">OUR MOMENTS</h2>
+      <div class="gallery-grid">
+        <img src="img/ARDIEART (3).jpg" alt="Gallery 1" class="gallery-img">
+        <img src="img/ARDIEART (4).jpg" alt="Gallery 2" class="gallery-img">
+        <img src="img/ARDIEART (5).jpg" alt="Gallery 3" class="gallery-img">
+        <img src="img/ARDIEART (6).jpg" alt="Gallery 4" class="gallery-img">
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close-lightbox">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Middle Ticket: Calendar -->
+    <section class="ticket-section middle-ticket">
+      <div class="ticket-content">
+        <h3 class="ticket-heading">OCTOBER 2026</h3>
+        <table class="calendar-table">
+          <thead>
+            <tr>
+              <th>M</th>
+              <th>T</th>
+              <th>W</th>
+              <th>T</th>
+              <th>F</th>
+              <th>S</th>
+              <th>S</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td class="highlight-date">
+                <svg class="heart-icon" viewBox="0 0 24 24" fill="#e74c3c">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+                <span>6</span>
+              </td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="save-the-date">
+          <p class="label">SAVE THE DATE</p>
+          <p class="value">06.10.2026</p>
+          <span class="small-heart">♥</span>
+          <button id="btn-calendar" class="btn-primary"
+            style="margin-top:15px; font-size:0.7rem; padding: 10px 20px;">SIMPAN KE KALENDER</button>
+        </div>
+      </div>
+      <div class="ticket-rip"></div>
+    </section>
+
+    <!-- Bottom Ticket: Dress Code & Venue -->
+    <section class="ticket-section bottom-ticket" id="venue-section">
+      <div class="ticket-content">
+        <h3 class="ticket-heading">DRESS CODE</h3>
+        <div class="dress-icon" style="text-align: center; margin: 15px 0;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2c3e50" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M20.38 3.46L16 2a8 8 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z" />
+          </svg>
+        </div>
+        <p class="dress-text">Pakaian bebas dan sopan.</p>
+
+        <div class="icon-divider-line">
+          <svg class="plane-icon-small" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21.5 4s-2 .5-3.5 2L14.5 9.5l-8.2-1.8c-.8-.2-1.5.3-1.6 1.1-.1.7.3 1.4 1 1.6l5.5 2.5-4 4-2.8-.7c-.6-.2-1.2.2-1.4.8-.1.5.2 1 .6 1.2l3.8 1.8 1.8 3.8c.2.4.7.7 1.2.6.6-.2 1-1 .8-1.4l-.7-2.8 4-4 2.5 5.5c.2.7.9 1.1 1.6 1 .8-.1 1.3-.8 1.1-1.6z" />
+          </svg>
+        </div>
+
+        <div class="venue-separator"></div>
+
+        <h3 class="ticket-heading small">LOKASI ACARA</h3>
+        <p class="venue-name">KEDIAMAN MEMPELAI</p>
+        <p class="venue-address">Dusun Co'gunung Barat, Kec. Waru, Pamekasan</p>
+
+        <iframe src="https://maps.google.com/maps?q=6°57'44.8%22S+113°32'16.1%22E&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="250" style="border:0; border-radius: 8px; margin-bottom: 15px; margin-top: 15px;"
+          allowfullscreen="" loading="lazy"></iframe>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=6°57'44.8%22S+113°32'16.1%22E" target="_blank"
+          class="btn-primary">HOW TO GET THERE</a>
+      </div>
+      <div class="ticket-rip bottom"></div>
+    </section>
+
+    <!-- ================= DIGITAL GIFT SECTION ================= -->
+    <section class="gift-section" id="gift-section">
+      <h2 class="section-title">WEDDING GIFT</h2>
+      <p class="welcome-text">Bagi keluarga dan sahabat yang ingin memberikan tanda kasih, dapat mengirimkan melalui:
+      </p>
+
+      <div class="card-gift">
+        <h3>BCA</h3>
+        <p id="rekening-bca" class="rek-number">6975385373</p>
+        <p class="rek-name">a.n LINA AGUSTINA</p>
+        <button class="btn-copy" onclick="copyRekening('rekening-bca')">SALIN REKENING</button>
+      </div>
+
+      <div class="card-gift mt-15">
+        <h3>BRI</h3>
+        <p id="rekening-dana" class="rek-number">646801035224506</p>
+        <p class="rek-name">a.n. Lina Agustina</p>
+        <button class="btn-copy" onclick="copyRekening('rekening-dana')">SALIN REKENING</button>
+      </div>
+    </section>
+
+    <!-- ================= RSVP & WISHES SECTION ================= -->
+    <section class="rsvp-section" id="rsvp-section">
+      <div class="ticket-section" style="margin-top:0;">
+        <div class="ticket-content">
+          <h3 class="ticket-heading small">RSVP & WISHES</h3>
+          <p class="dress-text">Konfirmasi kehadiran dan berikan doa restu Anda.</p>
+
+          <form id="rsvp-form" class="rsvp-form">
+            <input type="text" id="rsvp-name" placeholder="Nama Anda" required>
+            <select id="rsvp-attendance" required>
+              <option value="" disabled selected>Konfirmasi Kehadiran</option>
+              <option value="Hadir">Ya, Saya Akan Hadir</option>
+              <option value="Tidak Hadir">Maaf, Saya Tidak Bisa Hadir</option>
+            </select>
+
+            <div class="message-templates">
+              <span class="badge-btn">Selamat menempuh hidup baru! 🎉</span>
+              <span class="badge-btn">Semoga samawa dan bahagia selalu ya! ✨</span>
+              <span class="badge-btn">Maaf belum bisa hadir, doa terbaik untuk kalian. 🙏</span>
+            </div>
+
+            <textarea id="rsvp-message" rows="4" placeholder="Tuliskan ucapan & doa Anda..." required></textarea>
+            <button type="submit" class="btn-primary" style="width:100%;">KIRIM UCAPAN</button>
+          </form>
+
+          <div class="wishes-container">
+            <h4 class="wishes-title">Buku Tamu</h4>
+            <div id="wishes-feed" class="wishes-feed">
+              <!-- Default/Dummy Wishes -->
+              <div class="wish-card">
+                <h5>Budi & Keluarga</h5>
+                <span class="wish-badge present">Hadir</span>
+                <p>"Selamat menempuh hidup baru Wafi & Lina! Semoga samawa dan bahagia selalu."</p>
+              </div>
+              <div class="wish-card">
+                <h5>Sinta</h5>
+                <span class="wish-badge absent">Tidak Hadir</span>
+                <p>"Maaf belum bisa hadir, doa terbaik untuk kalian berdua yaa."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ================= FLOATING BOTTOM NAVIGATION ================= -->
+  <nav class="bottom-nav">
+    <a href="#home-section" class="nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </svg>
+      <span>Home</span>
+    </a>
+    <a href="#timeline-section" class="nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 6 12 12 16 14" />
+      </svg>
+      <span>Acara</span>
+    </a>
+    <a href="#gallery-section" class="nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+        <circle cx="8.5" cy="8.5" r="1.5" />
+        <polyline points="21 15 16 10 5 21" />
+      </svg>
+      <span>Galeri</span>
+    </a>
+    <a href="#gift-section" class="nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+      </svg>
+      <span>Hadiah</span>
+    </a>
+  </nav>
+
+  <!-- Notification Toast for Copy -->
+  <div id="toast" class="toast">Teks berhasil disalin!</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js?v=5"></script>
+</body>
+
+</html>
