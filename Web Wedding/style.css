@@ -50,6 +50,7 @@ TICKET GENERAL
 */
 .ticket-section {
   width: 90%;
+  margin: 0 auto;
   background-color: var(--ticket-bg);
   color: var(--text-dark);
   position: relative;
