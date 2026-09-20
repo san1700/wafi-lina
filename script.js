@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    const animatedElements = document.querySelectorAll('.ticket-section, .timeline-item, .welcome-section, .gallery-section, .gift-section, .profile-card');
+    const animatedElements = document.querySelectorAll('.ticket-section, .timeline-item, .welcome-section, .gallery-section, .gift-section, .profile-card, .card-gift-premium');
     animatedElements.forEach(el => {
         el.classList.add('fade-in-up');
         observer.observe(el);
