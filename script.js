@@ -87,6 +87,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Trigger envelope animation
         envelope.classList.add('open');
 
+        // Play music immediately upon user interaction to bypass browser autoplay blocks
+        bgMusic.play().then(() => {
+            isMusicPlaying = true;
+            musicBtn.classList.add('rotating');
+        }).catch(err => {
+            console.log("Audio autoplay prevented by browser:", err);
+        });
+
         // Wait for envelope animation to finish
         setTimeout(() => {
             // Slide up the cover
@@ -136,13 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
             musicBtn.classList.add('visible');
             bottomNav.classList.add('visible');
 
-            // Play music
-            bgMusic.play().then(() => {
-                isMusicPlaying = true;
-                musicBtn.classList.add('rotating');
-            }).catch(err => {
-                console.log("Audio autoplay prevented by browser:", err);
-            });
         }, 5000); // Wait 5 seconds for user to read text
     });
 
