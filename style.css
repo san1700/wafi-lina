@@ -267,12 +267,12 @@ WELCOME SECTION
 }
 
 .invitation-salam {
-  font-family: 'Cinzel', serif;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
   margin-bottom: 15px;
-  color: #7bbaff;
-  letter-spacing: 1px;
+  color: #ffffff;
+  letter-spacing: 2px;
 }
 
 .invitation-body {
