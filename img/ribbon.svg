@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" width="100%" height="100%">
+  <!-- Left tail -->
+  <path d="M 0,100 L 50,50 L 0,0 L 250,0 L 250,100 Z" fill="#2563eb" />
+  <!-- Right tail -->
+  <path d="M 500,100 L 450,50 L 500,0 L 250,0 L 250,100 Z" fill="#2563eb" />
+  <!-- Left shadow -->
+  <path d="M 120,100 L 170,140 L 170,100 Z" fill="#1e3a8a" />
+  <!-- Right shadow -->
+  <path d="M 380,100 L 330,140 L 330,100 Z" fill="#1e3a8a" />
+  <!-- Center banner -->
+  <path d="M 120,20 L 380,20 L 380,110 L 120,110 Z" fill="#3b82f6" />
+</svg>

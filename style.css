@@ -1102,48 +1102,121 @@ GIFT & RSVP SECTION
   padding: 30px 0;
 }
 
-.card-gift {
-  background-color: var(--ticket-bg);
-  color: var(--text-dark);
-  padding: 20px;
-  border-radius: 12px;
-  margin: 15px 0;
+.card-gift-premium {
+  background: linear-gradient(135deg, #e0e0e0 0%, #ffffff 50%, #d4d4d4 100%);
+  border-radius: 16px;
+  padding: 20px 25px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
   position: relative;
+  text-align: left;
+  color: #333;
 }
 
-.card-gift h3 {
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
-
-.rek-number {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 5px;
-}
-
-.rek-name {
-  font-size: 0.8rem;
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.btn-copy {
-  background-color: transparent;
-  border: 1px solid var(--navy-blue);
-  color: var(--navy-blue);
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.bank-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
 }
 
-.btn-copy:hover {
-  background-color: var(--navy-blue);
-  color: var(--text-light);
+.bca-logo {
+  background-color: #ffffff;
+  color: #005aaa;
+  font-weight: 900;
+  font-style: italic;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+}
+
+.bri-logo {
+  background-color: #0a529b;
+  color: #ffffff;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-family: Arial, sans-serif;
+}
+
+.card-chip {
+  width: 45px;
+  height: 35px;
+  background: linear-gradient(135deg, #f2d588, #d4af37, #e6c27a);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #b8860b;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+.card-chip::before {
+  content: '';
+  position: absolute;
+  top: 33%; left: 0; right: 0; height: 1px;
+  background: rgba(0,0,0,0.15);
+  box-shadow: 0 11px 0 rgba(0,0,0,0.15);
+}
+.card-chip::after {
+  content: '';
+  position: absolute;
+  left: 33%; top: 0; bottom: 0; width: 1px;
+  background: rgba(0,0,0,0.15);
+  box-shadow: 15px 0 0 rgba(0,0,0,0.15);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-body .rek-number {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0;
+  color: #222;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card-body .btn-copy-premium {
+  align-self: flex-start;
+  background-color: #8bb3f4;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.card-body .btn-copy-premium:hover {
+  background-color: #729ce6;
+}
+
+.card-body .rek-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
 }
 
 .mt-15 {

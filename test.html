@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.envelope-wrapper {
+  margin: 100px auto;
+  position: relative;
+  width: 320px;
+  height: 220px;
+  perspective: 1000px;
+}
+.envelope {
+  position: relative;
+  width: 100%; height: 100%;
+  transform-style: preserve-3d;
+}
+.env-back {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('img/envelope.png');
+  background-size: cover; background-position: center;
+  filter: hue-rotate(220deg) brightness(0.6);
+  border-radius: 5px;
+}
+.env-flap-left, .env-flap-right, .env-flap-bottom, .env-flap-top {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('img/envelope.png');
+  background-size: cover; background-position: center;
+  filter: hue-rotate(220deg);
+}
+.env-flap-left { clip-path: polygon(0 0, 50% 50%, 0 100%); }
+.env-flap-right { clip-path: polygon(100% 0, 100% 100%, 50% 50%); }
+.env-flap-bottom { clip-path: polygon(0 100%, 50% 50%, 100% 100%); }
+.env-flap-top {
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
+  z-index: 4;
+  transform-origin: top;
+  transition: transform 0.8s ease-in-out;
+}
+.envelope:hover .env-flap-top {
+  transform: rotateX(180deg);
+}
+</style>
+</head>
+<body>
+<div class="envelope-wrapper">
+  <div class="envelope">
+    <div class="env-back"></div>
+    <div class="env-flap-left"></div>
+    <div class="env-flap-right"></div>
+    <div class="env-flap-bottom"></div>
+    <div class="env-flap-top"></div>
+  </div>
+</div>
+</body>
+</html>

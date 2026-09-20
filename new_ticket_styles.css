@@ -1,0 +1,76 @@
+/* ================= NEW TICKET BACKGROUND STYLE ================= */
+.new-ticket-style {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+  margin-top: 20px;
+  max-width: 500px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.new-ticket-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.3));
+}
+
+.absolute-content {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+  color: #0f3057; /* Deep blue to match lace */
+  padding: 0;
+}
+
+.new-ticket-style .ticket-subtitle,
+.new-ticket-style .boarding-text,
+.new-ticket-style .label,
+.new-ticket-style .value,
+.new-ticket-style .couple-names {
+  color: #0f3057 !important;
+}
+
+.new-ticket-style .plane-icon,
+.new-ticket-style .globe-placeholder svg,
+.new-ticket-style .stamps-section svg path,
+.new-ticket-style .stamps-section svg circle,
+.new-ticket-style .stamps-section svg text {
+  stroke: #0f3057 !important;
+  fill: transparent;
+}
+.new-ticket-style .stamps-section svg text {
+  fill: #0f3057 !important;
+  stroke: none !important;
+}
+
+/* Adjust typography for elegance */
+.new-ticket-style .couple-names {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+  margin: 15px 0;
+}
+.new-ticket-style .and-script {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #2c5f8d !important;
+  text-transform: lowercase;
+}
+.new-ticket-style .ticket-subtitle {
+  font-weight: 600;
+  letter-spacing: 4px;
+}

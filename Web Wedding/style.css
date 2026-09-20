@@ -694,7 +694,10 @@ ENVELOPE ANIMATION
   z-index: 3;
 }
 
-.env-flap-left, .env-flap-right, .env-flap-bottom, .env-flap-top {
+.env-flap-left,
+.env-flap-right,
+.env-flap-bottom,
+.env-flap-top {
   position: absolute;
   top: 0;
   left: 0;
@@ -771,17 +774,21 @@ ENVELOPE ANIMATION
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
+
 .env-letter .cover-subtitle {
   font-size: 0.7rem;
   margin-bottom: 5px;
 }
+
 .env-letter .guest-info {
   margin-bottom: 10px;
   padding: 10px;
 }
+
 .env-letter .guest-name {
   font-size: 1.2rem;
 }
+
 .env-letter p {
   font-size: 0.8rem;
 }
@@ -808,9 +815,17 @@ ENVELOPE ANIMATION
 }
 
 @keyframes sealPulse {
-  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5); }
-  70% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
 }
 
 .wax-seal:hover {
@@ -1010,48 +1025,121 @@ GIFT & RSVP SECTION
   padding: 30px 0;
 }
 
-.card-gift {
-  background-color: var(--ticket-bg);
-  color: var(--text-dark);
-  padding: 20px;
-  border-radius: 12px;
-  margin: 15px 0;
+.card-gift-premium {
+  background: linear-gradient(135deg, #e0e0e0 0%, #ffffff 50%, #d4d4d4 100%);
+  border-radius: 16px;
+  padding: 20px 25px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
   position: relative;
+  text-align: left;
+  color: #333;
 }
 
-.card-gift h3 {
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
-
-.rek-number {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 5px;
-}
-
-.rek-name {
-  font-size: 0.8rem;
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.btn-copy {
-  background-color: transparent;
-  border: 1px solid var(--navy-blue);
-  color: var(--navy-blue);
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.bank-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
 }
 
-.btn-copy:hover {
-  background-color: var(--navy-blue);
-  color: var(--text-light);
+.bca-logo {
+  background-color: #ffffff;
+  color: #005aaa;
+  font-weight: 900;
+  font-style: italic;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+}
+
+.bri-logo {
+  background-color: #0a529b;
+  color: #ffffff;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-family: Arial, sans-serif;
+}
+
+.card-chip {
+  width: 45px;
+  height: 35px;
+  background: linear-gradient(135deg, #f2d588, #d4af37, #e6c27a);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #b8860b;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+.card-chip::before {
+  content: '';
+  position: absolute;
+  top: 33%; left: 0; right: 0; height: 1px;
+  background: rgba(0,0,0,0.15);
+  box-shadow: 0 11px 0 rgba(0,0,0,0.15);
+}
+.card-chip::after {
+  content: '';
+  position: absolute;
+  left: 33%; top: 0; bottom: 0; width: 1px;
+  background: rgba(0,0,0,0.15);
+  box-shadow: 15px 0 0 rgba(0,0,0,0.15);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-body .rek-number {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0;
+  color: #222;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card-body .btn-copy-premium {
+  align-self: flex-start;
+  background-color: #8bb3f4;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.card-body .btn-copy-premium:hover {
+  background-color: #729ce6;
+}
+
+.card-body .rek-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
 }
 
 .mt-15 {
@@ -1342,6 +1430,7 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
   font-style: italic;
   line-height: 1.4;
 }
+
 /* ================= CORNER DECORATIONS ================= */
 .corner-decor {
   position: fixed;
@@ -1355,10 +1444,28 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
   opacity: 0.9;
 }
 
-.corner-tl { top: -10px; left: -10px; }
-.corner-tr { top: -10px; right: -10px; transform: scaleX(-1); }
-.corner-bl { bottom: -10px; left: -10px; transform: scaleY(-1); }
-.corner-br { bottom: -10px; right: -10px; transform: scale(-1, -1); }
+.corner-tl {
+  top: -10px;
+  left: -10px;
+}
+
+.corner-tr {
+  top: -10px;
+  right: -10px;
+  transform: scaleX(-1);
+}
+
+.corner-bl {
+  bottom: -10px;
+  left: -10px;
+  transform: scaleY(-1);
+}
+
+.corner-br {
+  bottom: -10px;
+  right: -10px;
+  transform: scale(-1, -1);
+}
 
 /* ================= PHOTO RIBBON ================= */
 .photo-container {
@@ -1369,10 +1476,12 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
 
 .photo-ribbon {
   position: absolute;
-  bottom: -40px; /* Adjust this value so it overlaps the bottom edge perfectly */
+  bottom: -40px;
+  /* Adjust this value so it overlaps the bottom edge perfectly */
   left: 60%;
   transform: translateX(-50%);
-  width: 120%; /* Slightly wider than the photo */
+  width: 120%;
+  /* Slightly wider than the photo */
   max-width: 400px;
   z-index: 10;
   pointer-events: none;
@@ -1387,15 +1496,21 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
   left: 60%;
   transform: translateX(-50%);
   width: 300px;
-  z-index: 6; /* Above front flap and wax seal */
+  z-index: 6;
+  /* Above front flap and wax seal */
   pointer-events: none;
   animation: handSway 5s ease-in-out infinite alternate;
-  filter: drop-shadow(0 -5px 15px rgba(0,0,0,0.5));
+  filter: drop-shadow(0 -5px 15px rgba(0, 0, 0, 0.5));
 }
 
 @keyframes handSway {
-  0% { transform: translateX(-50%) rotate(-2deg); }
-  100% { transform: translateX(-48%) rotate(2deg); }
+  0% {
+    transform: translateX(-50%) rotate(-2deg);
+  }
+
+  100% {
+    transform: translateX(-48%) rotate(2deg);
+  }
 }
 
 
@@ -1430,7 +1545,7 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
   display: flex;
   flex-direction: column;
   z-index: 0;
-  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.3));
 }
 
 .ticket-bg-top {
@@ -1486,6 +1601,7 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
   stroke: #0f3057 !important;
   fill: transparent;
 }
+
 .new-ticket-style .stamps-section svg text {
   fill: #0f3057 !important;
   stroke: none !important;
@@ -1496,25 +1612,29 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
   font-size: 1.6rem;
   letter-spacing: 1px;
   font-weight: 700;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
   margin: 10px 0;
   text-align: center;
 }
+
 .new-ticket-style .and-script {
   font-family: 'Great Vibes', cursive;
   font-size: 2.2rem;
   color: #2c5f8d !important;
   text-transform: lowercase;
 }
+
 .new-ticket-style .ticket-subtitle {
   font-weight: 600;
   letter-spacing: 3px;
   margin-bottom: 10px;
 }
+
 .new-ticket-style .flight-details {
   gap: 10px;
   margin: 15px 0;
 }
+
 .new-ticket-style .stamps-section {
   transform: scale(0.9);
   margin: 10px 0;
@@ -1532,7 +1652,8 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #7bbaff; /* Matching the blue theme */
+  color: #7bbaff;
+  /* Matching the blue theme */
   letter-spacing: 1px;
 }
 

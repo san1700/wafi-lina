@@ -1,0 +1,35 @@
+/* ================= FEATHER DECORATION ================= */
+.feather-prop {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%) rotate(15deg);
+  width: 80px;
+  z-index: 10;
+  animation: floatFeather 4s ease-in-out infinite alternate;
+  pointer-events: none;
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+}
+
+@keyframes floatFeather {
+  0% { transform: translateY(-50%) rotate(15deg); }
+  100% { transform: translateY(-55%) rotate(5deg); }
+}
+
+/* ================= HAND DECORATION ================= */
+.hand-prop {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  z-index: 6; /* Just above the envelope, or maybe below the flap? */
+  pointer-events: none;
+  animation: handSway 5s ease-in-out infinite alternate;
+  filter: drop-shadow(0 -5px 15px rgba(0,0,0,0.5));
+}
+
+@keyframes handSway {
+  0% { transform: translateX(-50%) rotate(-2deg); }
+  100% { transform: translateX(-48%) rotate(2deg); }
+}

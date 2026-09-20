@@ -1,0 +1,115 @@
+/* ================= NEW TICKET BACKGROUND STYLE (DYNAMIC HEIGHT) ================= */
+.new-ticket-style {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+  margin-top: 20px;
+  max-width: 500px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  /* Min height to ensure the background stretches reasonably */
+  min-height: 800px;
+}
+
+.new-ticket-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.3));
+}
+
+.ticket-bg-top {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ticket-bg-middle {
+  width: 100%;
+  flex-grow: 1;
+  background-image: url('img/ticket-mid-slice.png');
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  /* Slight negative margins to prevent subpixel gaps */
+  margin-top: -1px;
+  margin-bottom: -1px;
+  z-index: 1;
+}
+
+.ticket-bg-bottom {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.new-ticket-content {
+  position: relative;
+  z-index: 2;
+  /* The padding ensures the text sits entirely within the paper, avoiding the seal and lace */
+  padding: 35% 15% 75% 15% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #0f3057;
+}
+
+/* ================= TYPOGRAPHY ADJUSTMENTS ================= */
+.new-ticket-style .ticket-subtitle,
+.new-ticket-style .boarding-text,
+.new-ticket-style .label,
+.new-ticket-style .value,
+.new-ticket-style .couple-names {
+  color: #0f3057 !important;
+}
+
+.new-ticket-style .plane-icon,
+.new-ticket-style .globe-placeholder svg,
+.new-ticket-style .stamps-section svg path,
+.new-ticket-style .stamps-section svg circle,
+.new-ticket-style .stamps-section svg text {
+  stroke: #0f3057 !important;
+  fill: transparent;
+}
+.new-ticket-style .stamps-section svg text {
+  fill: #0f3057 !important;
+  stroke: none !important;
+}
+
+.new-ticket-style .couple-names {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+  margin: 10px 0;
+  text-align: center;
+}
+.new-ticket-style .and-script {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.2rem;
+  color: #2c5f8d !important;
+  text-transform: lowercase;
+}
+.new-ticket-style .ticket-subtitle {
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.new-ticket-style .flight-details {
+  gap: 10px;
+  margin: 15px 0;
+}
+.new-ticket-style .stamps-section {
+  transform: scale(0.9);
+  margin: 10px 0;
+}

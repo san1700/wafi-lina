@@ -1,0 +1,45 @@
+.env-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/envelope.png');
+  background-size: cover;
+  background-position: center;
+  filter: hue-rotate(220deg) brightness(0.5);
+  border-radius: 5px;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.env-flap-left, .env-flap-right, .env-flap-bottom, .env-flap-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/envelope.png');
+  background-size: cover;
+  background-position: center;
+  filter: hue-rotate(220deg);
+  border: none;
+}
+
+.env-flap-left {
+  clip-path: polygon(0 0, 50% 50%, 0 100%);
+}
+
+.env-flap-right {
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+}
+
+.env-flap-bottom {
+  clip-path: polygon(0 100%, 50% 50%, 100% 100%);
+}
+
+.env-flap-top {
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
+  z-index: 4;
+  transform-origin: top;
+  transition: transform 0.8s ease-in-out, z-index 0.2s;
+}
