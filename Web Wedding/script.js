@@ -15,18 +15,13 @@ window.addEventListener('load', () => {
     if (typeof particlesJS !== 'undefined') {
         particlesJS('particles-js', {
             "particles": {
-                "number": { "value": 12, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": "#ffffff" },
-                "shape": { 
-                    "type": "image",
-                    "image": {
-                        "src": "img/wayang-blue.png",
-                        "width": 100,
-                        "height": 138
-                    }
+                "number": { "value": 40, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#d4af37" }, // Gold color
+                "shape": {
+                    "type": "circle"
                 },
-                "opacity": { "value": 0.6, "random": true },
-                "size": { "value": 40, "random": true },
+                "opacity": { "value": 0.8, "random": true },
+                "size": { "value": 3, "random": true },
                 "line_linked": { "enable": false },
                 "move": {
                     "enable": true,
@@ -105,18 +100,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (typeof particlesJS !== 'undefined') {
                 particlesJS('particles-main', {
                     "particles": {
-                        "number": { "value": 15, "density": { "enable": true, "value_area": 800 } },
-                        "color": { "value": "#7bbaff" }, // Blue color
-                        "shape": { 
-                            "type": "image",
-                            "image": {
-                                "src": "img/wayang-blue.png",
-                                "width": 100,
-                                "height": 138
-                            }
+                        "number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
+                        "color": { "value": "#d4af37" }, // Gold fireflies
+                        "shape": {
+                            "type": "circle"
                         },
-                        "opacity": { "value": 0.4, "random": true },
-                        "size": { "value": 45, "random": true },
+                        "opacity": { "value": 0.7, "random": true, "anim": { "enable": true, "speed": 1, "opacity_min": 0.1, "sync": false } },
+                        "size": { "value": 4, "random": true, "anim": { "enable": true, "speed": 2, "size_min": 0.1, "sync": false } },
                         "line_linked": { "enable": false },
                         "move": {
                             "enable": true,

@@ -982,7 +982,10 @@ BOTTOM NAVIGATION
   transform: translateX(-50%);
   width: 100%;
   max-width: 480px;
-  background-color: var(--ticket-bg);
+  background-color: rgba(244, 240, 230, 0.85); /* Premium glassmorphism */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
@@ -1058,7 +1061,9 @@ GALLERY SECTION & LIGHTBOX
 }
 
 .lightbox {
-  display: none;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -1068,13 +1073,21 @@ GALLERY SECTION & LIGHTBOX
   z-index: 10000;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
 .lightbox.show {
-  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+.lightbox.show .lightbox-content {
+  transform: scale(1);
 }
 
 .lightbox-content {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(0.8);
   max-width: 90%;
   max-height: 90%;
   border: 4px solid #fff;
@@ -1791,4 +1804,18 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
   font-size: 0.75rem;
   color: #a0aabf;
   letter-spacing: 1px;
+}
+
+/* ================= PREMIUM MICRO-INTERACTIONS ================= */
+.btn-open-invitation, .btn-copy-premium, #btn-calendar, .btn-submit, .badge-btn, .music-btn {
+  transition: all 0.3s ease;
+}
+
+.btn-open-invitation:hover, .btn-copy-premium:hover, #btn-calendar:hover, .btn-submit:hover, .badge-btn:hover, .music-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(123, 186, 255, 0.4);
+}
+
+.btn-open-invitation:active, .btn-copy-premium:active, #btn-calendar:active, .btn-submit:active, .badge-btn:active, .music-btn:active {
+  transform: translateY(1px) scale(0.98);
 }
