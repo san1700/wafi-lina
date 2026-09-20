@@ -17,7 +17,7 @@ window.addEventListener('load', () => {
             "particles": {
                 "number": { "value": 12, "density": { "enable": true, "value_area": 800 } },
                 "color": { "value": "#ffffff" },
-                "shape": { 
+                "shape": {
                     "type": "image",
                     "image": {
                         "src": "img/wayang-blue.png",
@@ -54,11 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     const urlParams = new URLSearchParams(window.location.search);
     const guestNameParam = urlParams.get('to');
-    
+
     if (guestNameParam) {
         // Decode the URL parameter and escape HTML to prevent XSS (basic)
         const guestName = decodeURIComponent(guestNameParam).replace(/</g, "&lt;").replace(/>/g, "&gt;");
-        
+
         // Update the cover page
         const guestNameDisplay = document.getElementById('guest-name-display');
         if (guestNameDisplay) {
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     "particles": {
                         "number": { "value": 15, "density": { "enable": true, "value_area": 800 } },
                         "color": { "value": "#7bbaff" }, // Blue color
-                        "shape": { 
+                        "shape": {
                             "type": "image",
                             "image": {
                                 "src": "img/wayang-blue.png",
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    const animatedElements = document.querySelectorAll('.ticket-section, .timeline-item, .welcome-section, .gallery-section, .gift-section');
+    const animatedElements = document.querySelectorAll('.ticket-section, .timeline-item, .welcome-section, .gallery-section, .gift-section, .profile-card');
     animatedElements.forEach(el => {
         el.classList.add('fade-in-up');
         observer.observe(el);
@@ -258,11 +258,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 2. Open WhatsApp
             const whatsappNumber = "6282245455504"; // Ganti dengan nomor asli
-            
+
             // Format the text properly
             const rawText = `Halo, saya ${name}.\n\nSaya konfirmasi: *${attendance}*.\n\nPesan & Doa: ${message}`;
             const waText = encodeURIComponent(rawText);
-            
+
             // Copy to clipboard as a fallback
             navigator.clipboard.writeText(rawText).catch(err => console.log('Clipboard copy failed', err));
 
@@ -282,10 +282,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (templateBadges && messageTextarea) {
         templateBadges.forEach(badge => {
-            badge.addEventListener('click', function() {
+            badge.addEventListener('click', function () {
                 // Remove the emojis at the end for the actual message, or keep them. Let's keep them.
                 messageTextarea.value = this.innerText;
-                
+
                 // Add a small animation to textarea to show it updated
                 messageTextarea.style.transform = 'scale(1.02)';
                 setTimeout(() => {
@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
         wishCard.classList.add('wish-card');
 
         const badgeClass = attendance.toLowerCase().includes('tidak') ? 'absent' : 'present';
-        
+
         wishCard.innerHTML = `
             <h5>${name}</h5>
             <span class="wish-badge ${badgeClass}">${attendance}</span>
@@ -336,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const eventName = encodeURIComponent("Pernikahan Wafi & Lina");
             const eventDetails = encodeURIComponent("Acara pernikahan Khairul Wafi dan Lina Agustina. Mohon doa restunya!");
             const eventLocation = encodeURIComponent("Dusun Co'gunung Barat, Kec. Waru, Pamekasan");
-            
+
             // Format for Google Calendar: YYYYMMDDTHHmmssZ
             // Date: Oct 6, 2026 08:00 to 14:00 (Local time = GMT+7 roughly, but we can send local string)
             const startDate = "20261006T080000";
