@@ -1519,3 +1519,27 @@ NEW FEATURES (Preloader, Particles, Wishes, Calendar)
   transform: scale(0.9);
   margin: 10px 0;
 }
+
+/* --- Invitation Text Below Photo --- */
+.invitation-text-wrapper {
+  margin-top: 30px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.invitation-salam {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #7bbaff; /* Matching the blue theme */
+  letter-spacing: 1px;
+}
+
+.invitation-body {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  opacity: 0.85;
+  font-family: 'Montserrat', sans-serif;
+  color: #ecf0f1;
+}
